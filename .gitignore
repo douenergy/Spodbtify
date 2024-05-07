@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/*.log
+.env
+*.parquet
+*.duckdb
+*.db
+*.wal
