@@ -29,9 +29,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   spodbtify:
-    Playlists:
+    staging:
       +materialized: table
-    Tracks:
+    mart:
       +materialized: table
-    Swifties:
-      +materialized: table
+      
