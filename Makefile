@@ -13,10 +13,10 @@ doc:
 	dbt docs generate && dbt docs serve 
 
 duck_dev:
-	duckdb dev.duckdb -cmd "show all tables"
+	duckdb spodbtify.duckdb -cmd "USE spodbtify.dev; show all tables"
 
 duck_prod:
-	duckdb prod.duckdb -cmd "show all tables"
+	duckdb spodbtify.duckdb -cmd "USE spodbtify.prod; show all tables"
 
 clean: 
 	unset SPODBTIFY_SOURCE_PARQUET && dbt clean && rm -rf *.duckdb

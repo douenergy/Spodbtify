@@ -1,5 +1,6 @@
 
 target/
+target-base/
 dbt_packages/
 logs/*.log
 .env
@@ -7,3 +8,4 @@ logs/*.log
 *.duckdb
 *.db
 *.wal
+.user.yml
